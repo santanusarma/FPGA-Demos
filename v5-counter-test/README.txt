@@ -1,0 +1,1 @@
+Counter interfaced to 4 LEDs

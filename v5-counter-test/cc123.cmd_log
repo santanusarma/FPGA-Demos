@@ -1,0 +1,1 @@
+xst -ise "E:/Users/shan/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/v5-counter-test.ise" -intstyle ise -ifn "E:/Users/shan/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/cc123.xst" -ofn "E:/Users/shan/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/cc123.syr"
