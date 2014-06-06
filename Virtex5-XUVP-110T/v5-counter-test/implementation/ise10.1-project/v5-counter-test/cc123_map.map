@@ -1,0 +1,155 @@
+Release 10.1.03 Map K.39 (lin64)
+Xilinx Map Application Log File for Design 'cc123'
+
+Design Information
+------------------
+Command Line   : map -ise
+/home/student/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/v5-counter-tes
+t/v5-counter-test.ise -intstyle ise -p xc5vlx110t-ff1136-3 -w -logic_opt off -ol
+high -t 1 -cm area -pr off -k 6 -lc off -power off -o cc123_map.ncd cc123.ngd
+cc123.pcf 
+Target Device  : xc5vlx110t
+Target Package : ff1136
+Target Speed   : -3
+Mapper Version : virtex5 -- $Revision: 1.46.12.2 $
+Mapped Date    : Tue Jan  1 10:36:48 2013
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven packing...
+
+Phase 1.1
+Phase 1.1 (Checksum:95038) REAL time: 4 secs 
+
+Phase 2.7
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: q<27>
+   	 Comp: q<26>
+   	 Comp: q<25>
+   	 Comp: q<24>
+   	 Comp: q<23>
+   	 Comp: q<22>
+   	 Comp: q<21>
+   	 Comp: q<20>
+   	 Comp: q<19>
+   	 Comp: q<18>
+   	 Comp: q<17>
+   	 Comp: q<16>
+   	 Comp: q<15>
+   	 Comp: q<14>
+   	 Comp: q<13>
+   	 Comp: q<12>
+   	 Comp: q<11>
+   	 Comp: q<10>
+   	 Comp: q<9>
+   	 Comp: q<8>
+   	 Comp: q<7>
+   	 Comp: q<6>
+   	 Comp: q<5>
+   	 Comp: q<4>
+   	 Comp: q<3>
+   	 Comp: q<2>
+   	 Comp: q<1>
+   	 Comp: q<0>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 34 IOs, 6 are locked
+   and 28 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7 (Checksum:95038) REAL time: 4 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:95038) REAL time: 4 secs 
+
+Phase 4.33
+Phase 4.33 (Checksum:95038) REAL time: 4 secs 
+
+Phase 5.32
+Phase 5.32 (Checksum:95038) REAL time: 4 secs 
+
+Phase 6.2
+...
+
+Phase 6.2 (Checksum:ad3d0) REAL time: 5 secs 
+
+Phase 7.30
+Phase 7.30 (Checksum:ad3d0) REAL time: 5 secs 
+
+Phase 8.3
+...
+Phase 8.3 (Checksum:202448) REAL time: 5 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:202448) REAL time: 5 secs 
+
+Phase 10.8
+.
+Phase 10.8 (Checksum:7f4d98) REAL time: 5 secs 
+
+Phase 11.29
+Phase 11.29 (Checksum:7f4d98) REAL time: 5 secs 
+
+Phase 12.5
+Phase 12.5 (Checksum:7f4d98) REAL time: 5 secs 
+
+Phase 13.18
+Phase 13.18 (Checksum:b4c2a0) REAL time: 5 secs 
+
+Phase 14.5
+Phase 14.5 (Checksum:b4c2a0) REAL time: 5 secs 
+
+Phase 15.34
+Phase 15.34 (Checksum:b4c2a0) REAL time: 5 secs 
+
+REAL time consumed by placer: 5 secs 
+CPU  time consumed by placer: 5 secs 
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    2
+Slice Logic Utilization:
+  Number of Slice Registers:                    32 out of  69,120    1%
+    Number used as Flip Flops:                  32
+  Number of Slice LUTs:                         32 out of  69,120    1%
+    Number used as logic:                       31 out of  69,120    1%
+      Number using O5 output only:              30
+      Number using O5 and O6:                    1
+    Number used as exclusive route-thru:         1
+  Number of route-thrus:                        31 out of 138,240    1%
+    Number using O6 output only:                31
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     8 out of  17,280    1%
+  Number of LUT Flip Flop pairs used:           32
+    Number with an unused Flip Flop:             0 out of      32    0%
+    Number with an unused LUT:                   0 out of      32    0%
+    Number of fully used LUT-FF pairs:          32 out of      32  100%
+    Number of unique control sets:               1
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  69,120    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        34 out of     640    5%
+
+Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+
+Peak Memory Usage:  870 MB
+Total REAL time to MAP completion:  11 secs 
+Total CPU time to MAP completion:   9 secs 
+
+Mapping completed.
+See MAP report file "cc123_map.mrp" for details.

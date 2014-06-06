@@ -1,0 +1,6 @@
+CommandLine
+/opt/Xilinx/10.1/ISE/bin/lin64/unwrapped/xst -ise /home/student/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/v5-counter-test/v5-counter-test.ise -intstyle ise -ifn /home/student/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/v5-counter-test/cc123.xst -ofn /home/student/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/v5-counter-test/cc123.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

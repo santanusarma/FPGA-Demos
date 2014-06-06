@@ -1,0 +1,93 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/10.1/ISE/bin/lin64/unwrapped/trce -ise
+/home/student/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/v5-counter-test/v5-counter-test.ise
+-intstyle ise -v 3 -s 3 -xml cc123 cc123.ncd -o cc123.twr cc123.pcf -ucf
+pins.ucf
+
+Design file:              cc123.ncd
+Physical constraint file: cc123.pcf
+Device,package,speed:     xc5vlx110t,ff1136,-3 (PRODUCTION 1.62 2008-08-19, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+q<0>        |    9.670(R)|clk_BUFGP         |   0.000|
+q<1>        |    7.210(R)|clk_BUFGP         |   0.000|
+q<2>        |    8.242(R)|clk_BUFGP         |   0.000|
+q<3>        |    6.659(R)|clk_BUFGP         |   0.000|
+q<4>        |    8.098(R)|clk_BUFGP         |   0.000|
+q<5>        |    7.886(R)|clk_BUFGP         |   0.000|
+q<6>        |    8.305(R)|clk_BUFGP         |   0.000|
+q<7>        |    7.047(R)|clk_BUFGP         |   0.000|
+q<8>        |    9.352(R)|clk_BUFGP         |   0.000|
+q<9>        |    6.798(R)|clk_BUFGP         |   0.000|
+q<10>       |    6.760(R)|clk_BUFGP         |   0.000|
+q<11>       |    7.309(R)|clk_BUFGP         |   0.000|
+q<12>       |    6.782(R)|clk_BUFGP         |   0.000|
+q<13>       |    9.124(R)|clk_BUFGP         |   0.000|
+q<14>       |    8.429(R)|clk_BUFGP         |   0.000|
+q<15>       |    7.085(R)|clk_BUFGP         |   0.000|
+q<16>       |    8.095(R)|clk_BUFGP         |   0.000|
+q<17>       |    7.522(R)|clk_BUFGP         |   0.000|
+q<18>       |    6.912(R)|clk_BUFGP         |   0.000|
+q<19>       |    6.640(R)|clk_BUFGP         |   0.000|
+q<20>       |    7.451(R)|clk_BUFGP         |   0.000|
+q<21>       |    6.774(R)|clk_BUFGP         |   0.000|
+q<22>       |    7.375(R)|clk_BUFGP         |   0.000|
+q<23>       |    7.452(R)|clk_BUFGP         |   0.000|
+q<24>       |    6.911(R)|clk_BUFGP         |   0.000|
+q<25>       |    6.761(R)|clk_BUFGP         |   0.000|
+q<26>       |    8.842(R)|clk_BUFGP         |   0.000|
+q<27>       |    6.787(R)|clk_BUFGP         |   0.000|
+q<28>       |    9.319(R)|clk_BUFGP         |   0.000|
+q<29>       |    8.059(R)|clk_BUFGP         |   0.000|
+q<30>       |    7.693(R)|clk_BUFGP         |   0.000|
+q<31>       |    7.989(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.686|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Jan  1 10:37:27 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 556 MB
+
+
+

@@ -1,0 +1,7 @@
+NET "clk" LOC="AG18";
+NET "rst" LOC="V10"; #V10 =CPU_TRST_N
+
+NET "q<31>" LOC="H18";
+NET "q<30>" LOC="L18";
+NET "q<29>" LOC="G15";
+NET "q<28>" LOC="AD26";

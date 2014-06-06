@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/implementation/counter-led-test/cc123.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/implementation/counter-led-test/cc123.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/student/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/src/pins.ucf -p xc5vlx110t-ff1136-1 cc123.ngc cc123.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o cc123_map.ncd cc123.ngd cc123.pcf 
+par -w -intstyle ise -ol high -mt off cc123_map.ncd cc123.ncd cc123.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml cc123.twx cc123.ncd -o cc123.twr cc123.pcf 
+bitgen -intstyle ise -f cc123.ut cc123.ncd 

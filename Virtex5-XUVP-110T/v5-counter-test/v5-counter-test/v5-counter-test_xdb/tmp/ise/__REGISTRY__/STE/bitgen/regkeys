@@ -1,6 +1,0 @@
-CommandLine
-E:\Xilinx\10.1\ISE\bin\nt\unwrapped\bitgen.exe -ise E:/Users/shan/Dropbox/Projects/V5-ReferenceDesign/v5-counter-test/v5-counter-test/v5-counter-test.ise -intstyle ise -f cc123.ut cc123.ncd
-s
-FormatString
-bitgen [-d] [-j] [-b] [-w] [-l] [-m] [-t] [-n] [-u] [-a] [--p] [-r <bitFile>] [-intstyle ise|xflow|silent] [-ise <projectrepositoryfile>] {-bd <BRAM_data_file> [tag <tagname>]} {-g <setting_value>} <infile[.ncd]> [<outfile>] [<pcffile[.pcf]>]
-s
