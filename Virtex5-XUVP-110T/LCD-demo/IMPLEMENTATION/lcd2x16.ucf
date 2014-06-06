@@ -1,0 +1,20 @@
+#NET  FPGA_CPU_RESET_B     LOC="E9";    # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  CLK_27MHZ_FPGA       LOC="AG18" | IOSTANDARD="LVCMOS33";  # Bank 4, Vcco=3.3V, No DCI      
+NET  RST_N                LOC="E9"   | IOSTANDARD="LVCMOS33";  # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  GPIO_SW_C            LOC="AJ6"  | IOSTANDARD="LVCMOS33";  # Bank 18, Vcco=3.3V, No DCI
+#NET  GPIO_SW_E            LOC="AK7"  | IOSTANDARD="LVCMOS33";  # Bank 18, Vcco=3.3V, No DCI 
+NET  LCD_FPGA_DB<0>       LOC="T9"   | IOSTANDARD="LVCMOS33";  # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  LCD_FPGA_DB<1>       LOC="G7"   | IOSTANDARD="LVcMOS33";  # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  LCD_FPGA_DB<2>       LOC="G6"   | IOSTANDARD="LVCMOS33";  # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  LCD_FPGA_DB<3>       LOC="T11"  | IOSTANDARD="LVCMOS33";  # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  LCD_FPGA_E           LOC="AC9"  | IOSTANDARD="LVCMOS33";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors      
+NET  LCD_FPGA_RS          LOC="J17"  | IOSTANDARD="LVCMOS25";  # Bank 3, Vcco=2.5V, No DCI      
+NET  LCD_FPGA_RW          LOC="AC10" | IOSTANDARD="LVCMOS33";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors      
+NET  GPIO_LED<0>          LOC="H18"  | IOSTANDARD="LVCMOS25";   # Bank 3, Vcco=2.5V, No DCI
+NET  GPIO_LED<1>          LOC="L18"  | IOSTANDARD="LVCMOS25";   # Bank 3, Vcco=2.5V, No DCI
+NET  GPIO_LED<2>          LOC="G15"  | IOSTANDARD="LVCMOS25";   # Bank 3, Vcco=2.5V, No DCI
+NET  GPIO_LED<3>          LOC="AD26" | IOSTANDARD="LVCMOS25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_LED<4>          LOC="G16"  | IOSTANDARD="LVCMOS25";   # Bank 3, Vcco=2.5V, No DCI
+NET  GPIO_LED<5>          LOC="AD25" | IOSTANDARD="LVCMOS25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_LED<6>          LOC="AD24" | IOSTANDARD="LVCMOS25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_LED<7>          LOC="AE24" | IOSTANDARD="LVCMOS25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors

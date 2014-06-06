@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-working/LCD/IMPLEMENTATION/lcd2x16.ncd
+OUTFILE=/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-working/LCD/IMPLEMENTATION/lcd2x16.bit
+FAMILY=Virtex5
+PART=xc5vlx110t-1ff1136
+WORKINGDIR=/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-working/LCD/IMPLEMENTATION
+LICENSE=ISE
+USER_INFO=__0_0_0
