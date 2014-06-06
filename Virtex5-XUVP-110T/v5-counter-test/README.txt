@@ -2,5 +2,4 @@ This is a simple demo of a Counter interfaced to 4 LEDs on the Virtex 5 XUVP 110
 
 HDL Source : counter.vhd
 Test Benches: Nil
-ISE Version: 14.2
-Status: Working 
+ISE Version: 10.1
