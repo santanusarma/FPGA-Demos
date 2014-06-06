@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/lcd.vhdl</arg>&quot; line <arg fmt="%d" index="2">133</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/lcd.vhdl</arg>&quot; line <arg fmt="%d" index="2">134</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;0&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;0&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000011</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;1&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;1&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000011</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;2&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;2&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000011</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;3&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;3&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000010</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;4&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;4&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00101000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;5&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;5&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;6&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;6&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;7&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;7&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000001</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;8&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;8&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000010</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;9&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;9&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01010111</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;10&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;10&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000101</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;11&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;11&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01001100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;12&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;12&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01001100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;13&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;13&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000011</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;14&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;14&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01001111</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;15&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;15&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01001101</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;16&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;16&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000101</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;17&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;17&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00100000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;18&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;18&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01010100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;19&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;19&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01001111</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;20&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;20&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00100000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;21&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;21&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000110</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;22&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;22&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01010000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;23&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;23&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000111</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;24&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;24&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000001</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;25&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">data&lt;25&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">11000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">data&lt;26&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">data&lt;26&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00100000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;27&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;27&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;28&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;28&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000101</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;29&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;29&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01001101</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;30&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;30&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01001111</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;31&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;31&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">01010011</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;32&gt;.rs</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">data&lt;32&gt;.data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">00100000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">GPIO_LED_i&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">GPIO_LED_i&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">GPIO_LED_i&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">GPIO_LED_i&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">GPIO_LED_i&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">GPIO_LED_i&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">GPIO_LED_i&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">USER_CLK</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CLK_33MHZ_FPGA</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">clock_1MHz</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">clock_1KHz</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">clock_1Hz</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">clock_10KHz</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">clock_10Hz</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">clock_100KHz</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">clock_100Hz</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">clk_dvider</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1Mhz_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1Mhz_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1Mhz_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1Mhz_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1Mhz_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_100hz_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_100hz_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_100hz_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1Khz_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1Khz_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1Khz_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_100Khz_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_100Khz_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_100Khz_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1hz_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1hz_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_1hz_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_10hz_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_10hz_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_10hz_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_10Khz_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_10Khz_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/count_10Khz_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_1Hz</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_10Hz</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_1Hz_int</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_10Hz_int</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_100Hz</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_100hz_int</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_1KHz</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_10KHz</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_1Khz_int</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_100KHz</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_10Khz_int</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_100Khz_int</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_1MHz</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">clk_dvider/clock_1Mhz_int</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">lcd2x16</arg>&gt;.
+</msg>
+
+</messages>
+

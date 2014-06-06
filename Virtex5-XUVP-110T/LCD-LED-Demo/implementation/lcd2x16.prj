@@ -1,0 +1,4 @@
+vhdl work "../src/wb_lcd_driver.vhdl"
+vhdl work "../src/counter.vhd"
+vhdl work "../src/clk_div.vhd"
+vhdl work "../src/lcd.vhdl"

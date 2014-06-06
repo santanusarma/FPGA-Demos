@@ -1,0 +1,686 @@
+Release 14.2 - xst P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: lcd2x16.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lcd2x16.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lcd2x16"
+Output Format                      : NGC
+Target Device                      : xc5vlx110t-1-ff1136
+
+---- Source Options
+Top Module Name                    : lcd2x16
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Off
+Reduce Control Sets                : Off
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/counter.vhd" in Library work.
+Architecture behavioral of Entity counter is up to date.
+Compiling vhdl file "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/clk_div.vhd" in Library work.
+Architecture a of Entity clk_div is up to date.
+Compiling vhdl file "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/wb_lcd_driver.vhdl" in Library work.
+Architecture wb_lcd_driver of Entity wb_lcd_driver is up to date.
+Compiling vhdl file "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/lcd.vhdl" in Library work.
+Entity <lcd2x16> compiled.
+Entity <lcd2x16> (Architecture <lcd2x16>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <lcd2x16> in library <work> (architecture <lcd2x16>).
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clk_div> in library <work> (architecture <a>).
+
+Analyzing hierarchy for entity <wb_lcd_driver> in library <work> (architecture <wb_lcd_driver>) with generics.
+	ADDRESS = "0000000000000000"
+	CLK_DIV = "00001010"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <lcd2x16> in library <work> (Architecture <lcd2x16>).
+WARNING:Xst:790 - "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/lcd.vhdl" line 133: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/lcd.vhdl" line 134: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:2679 - Register <data<0>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<0>.data> in unit <lcd2x16> has a constant value of 00000011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<1>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<1>.data> in unit <lcd2x16> has a constant value of 00000011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<2>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<2>.data> in unit <lcd2x16> has a constant value of 00000011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<3>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<3>.data> in unit <lcd2x16> has a constant value of 00000010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<4>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<4>.data> in unit <lcd2x16> has a constant value of 00101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<5>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<5>.data> in unit <lcd2x16> has a constant value of 00001100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<6>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<6>.data> in unit <lcd2x16> has a constant value of 00000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<7>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<7>.data> in unit <lcd2x16> has a constant value of 00000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<8>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<8>.data> in unit <lcd2x16> has a constant value of 00000010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<9>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<9>.data> in unit <lcd2x16> has a constant value of 01010111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<10>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<10>.data> in unit <lcd2x16> has a constant value of 01000101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<11>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<11>.data> in unit <lcd2x16> has a constant value of 01001100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<12>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<12>.data> in unit <lcd2x16> has a constant value of 01001100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<13>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<13>.data> in unit <lcd2x16> has a constant value of 01000011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<14>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<14>.data> in unit <lcd2x16> has a constant value of 01001111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<15>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<15>.data> in unit <lcd2x16> has a constant value of 01001101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<16>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<16>.data> in unit <lcd2x16> has a constant value of 01000101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<17>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<17>.data> in unit <lcd2x16> has a constant value of 00100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<18>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<18>.data> in unit <lcd2x16> has a constant value of 01010100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<19>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<19>.data> in unit <lcd2x16> has a constant value of 01001111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<20>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<20>.data> in unit <lcd2x16> has a constant value of 00100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<21>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<21>.data> in unit <lcd2x16> has a constant value of 01000110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<22>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<22>.data> in unit <lcd2x16> has a constant value of 01010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<23>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<23>.data> in unit <lcd2x16> has a constant value of 01000111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<24>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<24>.data> in unit <lcd2x16> has a constant value of 01000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<25>.rs> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<25>.data> in unit <lcd2x16> has a constant value of 11000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<26>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<26>.data> in unit <lcd2x16> has a constant value of 00100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<27>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<27>.data> in unit <lcd2x16> has a constant value of 01000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<28>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<28>.data> in unit <lcd2x16> has a constant value of 01000101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<29>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<29>.data> in unit <lcd2x16> has a constant value of 01001101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<30>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<30>.data> in unit <lcd2x16> has a constant value of 01001111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<31>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<31>.data> in unit <lcd2x16> has a constant value of 01010011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<32>.rs> in unit <lcd2x16> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data<32>.data> in unit <lcd2x16> has a constant value of 00100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GPIO_LED_i<7>> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GPIO_LED_i<6>> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GPIO_LED_i<5>> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GPIO_LED_i<4>> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GPIO_LED_i<3>> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GPIO_LED_i<2>> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <GPIO_LED_i<1>> in unit <lcd2x16> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <lcd2x16> analyzed. Unit <lcd2x16> generated.
+
+Analyzing Entity <counter> in library <work> (Architecture <behavioral>).
+Entity <counter> analyzed. Unit <counter> generated.
+
+Analyzing Entity <clk_div> in library <work> (Architecture <a>).
+Entity <clk_div> analyzed. Unit <clk_div> generated.
+
+Analyzing generic Entity <wb_lcd_driver> in library <work> (Architecture <wb_lcd_driver>).
+	ADDRESS = "0000000000000000"
+	CLK_DIV = "00001010"
+Entity <wb_lcd_driver> analyzed. Unit <wb_lcd_driver> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <counter>.
+    Related source file is "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/counter.vhd".
+    Found 32-bit up counter for signal <s1>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <clk_div>.
+    Related source file is "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/clk_div.vhd".
+    Found 1-bit register for signal <clock_1MHz>.
+    Found 1-bit register for signal <clock_100KHz>.
+    Found 1-bit register for signal <clock_100Hz>.
+    Found 1-bit register for signal <clock_10Hz>.
+    Found 1-bit register for signal <clock_1Hz>.
+    Found 1-bit register for signal <clock_10KHz>.
+    Found 1-bit register for signal <clock_1KHz>.
+    Found 1-bit register for signal <clock_100hz_int>.
+    Found 1-bit register for signal <clock_100Khz_int>.
+    Found 1-bit register for signal <clock_10Hz_int>.
+    Found 1-bit register for signal <clock_10Khz_int>.
+    Found 1-bit register for signal <clock_1Hz_int>.
+    Found 1-bit register for signal <clock_1Khz_int>.
+    Found 1-bit register for signal <clock_1Mhz_int>.
+    Found 6-bit comparator less for signal <clock_1Mhz_int$cmp_lt0000> created at line 38.
+    Found 3-bit up counter for signal <count_100hz>.
+    Found 3-bit up counter for signal <count_100Khz>.
+    Found 3-bit up counter for signal <count_10hz>.
+    Found 3-bit up counter for signal <count_10Khz>.
+    Found 3-bit up counter for signal <count_1hz>.
+    Found 3-bit up counter for signal <count_1Khz>.
+    Found 5-bit up counter for signal <count_1Mhz>.
+    Summary:
+	inferred   7 Counter(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clk_div> synthesized.
+
+
+Synthesizing Unit <wb_lcd_driver>.
+    Related source file is "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/wb_lcd_driver.vhdl".
+    Found finite state machine <FSM_0> for signal <lcd_sm>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst_n                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit tristate buffer for signal <$mux0000>.
+    Found 1-bit register for signal <clk_slow>.
+    Found 8-bit down counter for signal <clock_cnt>.
+    Found 1-bit register for signal <cnt>.
+    Found 1-bit register for signal <mclock>.
+    Found 1-bit register for signal <mclock_d>.
+    Found 1-bit register for signal <sclockf>.
+    Found 1-bit register for signal <sclockr>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   4 Tristate(s).
+Unit <wb_lcd_driver> synthesized.
+
+
+Synthesizing Unit <lcd2x16>.
+    Related source file is "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/lcd.vhdl".
+WARNING:Xst:647 - Input <USER_CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLK_33MHZ_FPGA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <rst> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clock_1MHz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clock_1KHz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clock_1Hz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clock_10KHz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clock_10Hz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clock_100KHz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clock_100Hz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <lcd_sm>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (falling_edge)       |
+    | Reset              | rst_n                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 33x9-bit ROM for signal <$rom0000>.
+    Found 1-bit register for signal <first>.
+    Found 1-bit register for signal <GPIO_LED_i<0>>.
+    Found 1-bit register for signal <GPIO_SW_C_q>.
+    Found 8-bit register for signal <ptr>.
+    Found 8-bit adder for signal <ptr$addsub0000> created at line 170.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <lcd2x16> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 33x9-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 9
+ 3-bit up counter                                      : 6
+ 32-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+ 8-bit down counter                                    : 1
+# Registers                                            : 24
+ 1-bit register                                        : 23
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 6-bit comparator less                                 : 1
+# Tristates                                            : 1
+ 4-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <lcd_sm/FSM> on signal <lcd_sm[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00
+ go        | 01
+ wait_loop | 10
+ stop      | 11
+-----------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <wb_lcd_driver_0/lcd_sm/FSM> on signal <lcd_sm[1:2]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ idle          | 00
+ lcd_wd        | 01
+ lcd_busy_wait | 11
+ wb_ack        | 10
+---------------------------
+WARNING:Xst:1290 - Hierarchical block <clk_dvider> is unconnected in block <lcd2x16>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 1
+ 33x9-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 9
+ 3-bit up counter                                      : 6
+ 32-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+ 8-bit down counter                                    : 1
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+# Comparators                                          : 1
+ 6-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <lcd2x16> ...
+
+Optimizing unit <clk_div> ...
+WARNING:Xst:2677 - Node <clk_dvider/count_1Mhz_4> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1Mhz_3> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1Mhz_2> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1Mhz_1> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1Mhz_0> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_100hz_2> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_100hz_1> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_100hz_0> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1Khz_2> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1Khz_1> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1Khz_0> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_100Khz_2> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_100Khz_1> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_100Khz_0> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1hz_2> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1hz_1> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_1hz_0> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_10hz_2> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_10hz_1> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_10hz_0> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_10Khz_2> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_10Khz_1> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/count_10Khz_0> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_1Hz> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_10Hz> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_1Hz_int> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_10Hz_int> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_100Hz> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_100hz_int> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_1KHz> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_10KHz> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_1Khz_int> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_100KHz> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_10Khz_int> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_100Khz_int> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_1MHz> of sequential type is unconnected in block <lcd2x16>.
+WARNING:Xst:2677 - Node <clk_dvider/clock_1Mhz_int> of sequential type is unconnected in block <lcd2x16>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lcd2x16, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : lcd2x16.ngr
+Top Level Output File Name         : lcd2x16
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 52
+
+Cell Usage :
+# BELS                             : 172
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 32
+#      LUT2                        : 6
+#      LUT3                        : 7
+#      LUT4                        : 5
+#      LUT5                        : 6
+#      LUT6                        : 22
+#      MUXCY                       : 38
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 40
+# FlipFlops/Latches                : 61
+#      FD                          : 2
+#      FDC                         : 34
+#      FDC_1                       : 11
+#      FDCE_1                      : 1
+#      FDE                         : 2
+#      FDE_1                       : 1
+#      FDR                         : 7
+#      FDS                         : 2
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 49
+#      IBUF                        : 2
+#      IOBUF                       : 1
+#      OBUF                        : 43
+#      OBUFT                       : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx110tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              61  out of  69120     0%  
+ Number of Slice LUTs:                   89  out of  69120     0%  
+    Number used as Logic:                89  out of  69120     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     95
+   Number with an unused Flip Flop:      34  out of     95    35%  
+   Number with an unused LUT:             6  out of     95     6%  
+   Number of fully used LUT-FF pairs:    55  out of     95    57%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          52
+ Number of bonded IOBs:                  50  out of    640     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_27MHZ_FPGA                     | BUFGP                  | 61    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------+------------------------+-------+
+Control Signal                                           | Buffer(FF name)        | Load  |
+---------------------------------------------------------+------------------------+-------+
+lcd_sm_FSM_Acst_FSM_inv(lcd_sm_FSM_Acst_FSM_inv1_INV_0:O)| NONE(GPIO_LED_i_0)     | 46    |
+---------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.806ns (Maximum Frequency: 356.379MHz)
+   Minimum input arrival time before clock: 2.303ns
+   Maximum output required time after clock: 5.916ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_27MHZ_FPGA'
+  Clock period: 2.806ns (frequency: 356.379MHz)
+  Total number of paths / destination ports: 750 / 72
+-------------------------------------------------------------------------
+Delay:               2.806ns (Levels of Logic = 2)
+  Source:            wb_lcd_driver_0/clock_cnt_4 (FF)
+  Destination:       wb_lcd_driver_0/clock_cnt_7 (FF)
+  Source Clock:      CLK_27MHZ_FPGA rising
+  Destination Clock: CLK_27MHZ_FPGA rising
+
+  Data Path: wb_lcd_driver_0/clock_cnt_4 to wb_lcd_driver_0/clock_cnt_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.471   0.715  wb_lcd_driver_0/clock_cnt_4 (wb_lcd_driver_0/clock_cnt_4)
+     LUT3:I0->O            2   0.094   0.485  wb_lcd_driver_0/clock_cnt_cmp_eq0000_SW0 (N2)
+     LUT6:I5->O            8   0.094   0.374  wb_lcd_driver_0/clock_cnt_cmp_eq0000 (wb_lcd_driver_0/clock_cnt_not0001_inv)
+     FDS:S                     0.573          wb_lcd_driver_0/clock_cnt_1
+    ----------------------------------------
+    Total                      2.806ns (1.232ns logic, 1.574ns route)
+                                       (43.9% logic, 56.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_27MHZ_FPGA'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              2.303ns (Levels of Logic = 3)
+  Source:            GPIO_SW_C (PAD)
+  Destination:       lcd_sm_FSM_FFd2 (FF)
+  Destination Clock: CLK_27MHZ_FPGA falling
+
+  Data Path: GPIO_SW_C to lcd_sm_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.818   0.721  GPIO_SW_C_IBUF (GPIO_SW_C_IBUF)
+     LUT4:I1->O            1   0.094   0.576  lcd_sm_FSM_FFd2-In11 (lcd_sm_FSM_FFd2-In11)
+     LUT6:I4->O            1   0.094   0.000  lcd_sm_FSM_FFd2-In92 (lcd_sm_FSM_FFd2-In)
+     FDC_1:D                  -0.018          lcd_sm_FSM_FFd2
+    ----------------------------------------
+    Total                      2.303ns (1.006ns logic, 1.297ns route)
+                                       (43.7% logic, 56.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_27MHZ_FPGA'
+  Total number of paths / destination ports: 135 / 40
+-------------------------------------------------------------------------
+Offset:              5.916ns (Levels of Logic = 4)
+  Source:            wb_lcd_driver_0/lcd_sm_FSM_FFd2 (FF)
+  Destination:       LCD_FPGA_DB<0> (PAD)
+  Source Clock:      CLK_27MHZ_FPGA rising
+
+  Data Path: wb_lcd_driver_0/lcd_sm_FSM_FFd2 to LCD_FPGA_DB<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.471   0.770  wb_lcd_driver_0/lcd_sm_FSM_FFd2 (wb_lcd_driver_0/lcd_sm_FSM_FFd2)
+     LUT3:I0->O            6   0.094   0.816  wb_lcd_driver_0/mux0000_and00001 (wb_lcd_driver_0/mux0000_and0000)
+     LUT5:I1->O            1   0.094   0.789  wb_lcd_driver_0/mux0000_mux0000<4>_SW4 (N40)
+     LUT6:I2->O            1   0.094   0.336  wb_lcd_driver_0/mux0000_mux0000<4> (LCD_FPGA_DB_0_OBUFT)
+     OBUFT:I->O                2.452          LCD_FPGA_DB_0_OBUFT (LCD_FPGA_DB<0>)
+    ----------------------------------------
+    Total                      5.916ns (3.205ns logic, 2.711ns route)
+                                       (54.2% logic, 45.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.09 secs
+ 
+--> 
+
+
+Total memory usage is 587224 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   50 (   0 filtered)
+Number of infos    :   73 (   0 filtered)
+

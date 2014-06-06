@@ -1,0 +1,8 @@
+EN wb_lcd_driver NULL /home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/wb_lcd_driver.vhdl sub00/vhpl00 1401975401
+AR counter behavioral /home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/counter.vhd sub00/vhpl07 1401975398
+AR wb_lcd_driver wb_lcd_driver /home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/wb_lcd_driver.vhdl sub00/vhpl01 1401975402
+EN counter NULL /home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/counter.vhd sub00/vhpl06 1401975397
+AR clk_div a /home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/clk_div.vhd sub00/vhpl05 1401975400
+EN lcd2x16 NULL /home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/lcd.vhdl sub00/vhpl02 1401975403
+AR lcd2x16 lcd2x16 /home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/lcd.vhdl sub00/vhpl03 1401975404
+EN clk_div NULL /home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/src/clk_div.vhd sub00/vhpl04 1401975399

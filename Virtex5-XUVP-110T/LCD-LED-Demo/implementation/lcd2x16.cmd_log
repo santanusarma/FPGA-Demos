@@ -1,0 +1,207 @@
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-Demo0/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
+xst -intstyle ise -ifn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.xst" -ofn "/home/student/Dropbox/Projects/V5-ReferenceDesign/LCD/LCD-LED-Demo/implementation/lcd2x16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd2x16.ucf -p xc5vlx110t-ff1136-1 lcd2x16.ngc lcd2x16.ngd  
+map -intstyle ise -p xc5vlx110t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o lcd2x16_map.ncd lcd2x16.ngd lcd2x16.pcf 
+par -w -intstyle ise -ol high -mt off lcd2x16_map.ncd lcd2x16.ncd lcd2x16.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lcd2x16.twx lcd2x16.ncd -o lcd2x16.twr lcd2x16.pcf -ucf lcd2x16.ucf 
+bitgen -intstyle ise -f lcd2x16.ut lcd2x16.ncd 
