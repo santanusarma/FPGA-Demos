@@ -1,0 +1,10 @@
+Running: /opt/Xilinx/14.2/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation/testbench_selfcheck_beh_isim_beh.exe -prj /home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation/testbench_selfcheck_beh_beh.prj work.testbench_selfcheck_beh 
+ISim P.28xd (signature 0x54af6ca1)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation/../SRC/counter.vhd" into library work
+Parsing VHDL file "/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation/../testbench/testbench_selfcheck_beh.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:410 - "/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation/../testbench/testbench_selfcheck_beh.vhd" Line 35: Expression has 4 elements ; expected 32
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit testbench_selfcheck_beh in library work failed

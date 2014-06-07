@@ -1,0 +1,1436 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.2/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 1 -n
+3 -xml counter.twx counter.ncd -o counter.twr counter.pcf
+
+Design file:              counter.ncd
+Physical constraint file: counter.pcf
+Device,package,speed:     xc5vlx110t,ff1136,-1 (PRODUCTION 1.73 2012-07-09, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_CLOCK = PERIOD TIMEGRP "CLOCK" 40 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1024 paths analyzed, 153 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   2.372ns.
+--------------------------------------------------------------------------------
+
+Paths for end point count_int_0 (SLICE_X1Y101.CIN), 56 paths
+--------------------------------------------------------------------------------
+Slack:                  37.628ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_int_19 (FF)
+  Destination:          count_int_0 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      2.318ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.019ns (1.450 - 1.469)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: count_int_19 to count_int_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y97.AQ       Tcko                  0.450   count_int<16>
+                                                       count_int_19
+    SLICE_X1Y97.A1       net (fanout=3)        0.868   count_int<19>
+    SLICE_X1Y97.COUT     Topcya                0.509   count_int<16>
+                                                       Mcount_count_int_lut<12>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.179   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_0
+    -------------------------------------------------  ---------------------------
+    Total                                      2.318ns (1.450ns logic, 0.868ns route)
+                                                       (62.6% logic, 37.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  37.830ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_int_30 (FF)
+  Destination:          count_int_0 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      2.125ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.010ns (1.450 - 1.460)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: count_int_30 to count_int_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y94.BQ       Tcko                  0.450   count_int<28>
+                                                       count_int_30
+    SLICE_X1Y94.B4       net (fanout=3)        0.371   count_int<30>
+    SLICE_X1Y94.COUT     Topcyb                0.501   count_int<28>
+                                                       Mcount_count_int_lut<1>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.179   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_0
+    -------------------------------------------------  ---------------------------
+    Total                                      2.125ns (1.754ns logic, 0.371ns route)
+                                                       (82.5% logic, 17.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  37.831ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_int_31 (FF)
+  Destination:          count_int_0 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      2.124ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.010ns (1.450 - 1.460)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: count_int_31 to count_int_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y94.AQ       Tcko                  0.450   count_int<28>
+                                                       count_int_31
+    SLICE_X1Y94.A4       net (fanout=2)        0.362   count_int<31>
+    SLICE_X1Y94.COUT     Topcya                0.509   count_int<28>
+                                                       Mcount_count_int_lut<0>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.179   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_0
+    -------------------------------------------------  ---------------------------
+    Total                                      2.124ns (1.762ns logic, 0.362ns route)
+                                                       (83.0% logic, 17.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point count_int_2 (SLICE_X1Y101.CIN), 56 paths
+--------------------------------------------------------------------------------
+Slack:                  37.687ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_int_19 (FF)
+  Destination:          count_int_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      2.259ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.019ns (1.450 - 1.469)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: count_int_19 to count_int_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y97.AQ       Tcko                  0.450   count_int<16>
+                                                       count_int_19
+    SLICE_X1Y97.A1       net (fanout=3)        0.868   count_int<19>
+    SLICE_X1Y97.COUT     Topcya                0.509   count_int<16>
+                                                       Mcount_count_int_lut<12>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.120   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_2
+    -------------------------------------------------  ---------------------------
+    Total                                      2.259ns (1.391ns logic, 0.868ns route)
+                                                       (61.6% logic, 38.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  37.889ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_int_30 (FF)
+  Destination:          count_int_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      2.066ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.010ns (1.450 - 1.460)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: count_int_30 to count_int_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y94.BQ       Tcko                  0.450   count_int<28>
+                                                       count_int_30
+    SLICE_X1Y94.B4       net (fanout=3)        0.371   count_int<30>
+    SLICE_X1Y94.COUT     Topcyb                0.501   count_int<28>
+                                                       Mcount_count_int_lut<1>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.120   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_2
+    -------------------------------------------------  ---------------------------
+    Total                                      2.066ns (1.695ns logic, 0.371ns route)
+                                                       (82.0% logic, 18.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  37.890ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_int_31 (FF)
+  Destination:          count_int_2 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      2.065ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.010ns (1.450 - 1.460)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: count_int_31 to count_int_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y94.AQ       Tcko                  0.450   count_int<28>
+                                                       count_int_31
+    SLICE_X1Y94.A4       net (fanout=2)        0.362   count_int<31>
+    SLICE_X1Y94.COUT     Topcya                0.509   count_int<28>
+                                                       Mcount_count_int_lut<0>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.120   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_2
+    -------------------------------------------------  ---------------------------
+    Total                                      2.065ns (1.703ns logic, 0.362ns route)
+                                                       (82.5% logic, 17.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point count_int_1 (SLICE_X1Y101.CIN), 56 paths
+--------------------------------------------------------------------------------
+Slack:                  37.701ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_int_19 (FF)
+  Destination:          count_int_1 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      2.245ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.019ns (1.450 - 1.469)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: count_int_19 to count_int_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y97.AQ       Tcko                  0.450   count_int<16>
+                                                       count_int_19
+    SLICE_X1Y97.A1       net (fanout=3)        0.868   count_int<19>
+    SLICE_X1Y97.COUT     Topcya                0.509   count_int<16>
+                                                       Mcount_count_int_lut<12>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.106   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_1
+    -------------------------------------------------  ---------------------------
+    Total                                      2.245ns (1.377ns logic, 0.868ns route)
+                                                       (61.3% logic, 38.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  37.903ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_int_30 (FF)
+  Destination:          count_int_1 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      2.052ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.010ns (1.450 - 1.460)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: count_int_30 to count_int_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y94.BQ       Tcko                  0.450   count_int<28>
+                                                       count_int_30
+    SLICE_X1Y94.B4       net (fanout=3)        0.371   count_int<30>
+    SLICE_X1Y94.COUT     Topcyb                0.501   count_int<28>
+                                                       Mcount_count_int_lut<1>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.106   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_1
+    -------------------------------------------------  ---------------------------
+    Total                                      2.052ns (1.681ns logic, 0.371ns route)
+                                                       (81.9% logic, 18.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  37.904ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_int_31 (FF)
+  Destination:          count_int_1 (FF)
+  Requirement:          40.000ns
+  Data Path Delay:      2.051ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.010ns (1.450 - 1.460)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    CLOCK_BUFGP rising at 40.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: count_int_31 to count_int_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y94.AQ       Tcko                  0.450   count_int<28>
+                                                       count_int_31
+    SLICE_X1Y94.A4       net (fanout=2)        0.362   count_int<31>
+    SLICE_X1Y94.COUT     Topcya                0.509   count_int<28>
+                                                       Mcount_count_int_lut<0>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.106   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_1
+    -------------------------------------------------  ---------------------------
+    Total                                      2.051ns (1.689ns logic, 0.362ns route)
+                                                       (82.4% logic, 17.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CLOCK = PERIOD TIMEGRP "CLOCK" 40 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 38.334ns (period - min period limit)
+  Period: 40.000ns
+  Min period limit: 1.666ns (600.240MHz) (Tbgper_I)
+  Physical resource: CLOCK_BUFGP/BUFG/I0
+  Logical resource: CLOCK_BUFGP/BUFG/I0
+  Location pin: BUFGCTRL_X0Y0.I0
+  Clock network: CLOCK_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 39.182ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 40.000ns
+  Low pulse: 20.000ns
+  Low pulse limit: 0.409ns (Tcl)
+  Physical resource: count_int<28>/CLK
+  Logical resource: count_int_31/CK
+  Location pin: SLICE_X1Y94.CLK
+  Clock network: CLOCK_BUFGP
+--------------------------------------------------------------------------------
+Slack: 39.182ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 40.000ns
+  High pulse: 20.000ns
+  High pulse limit: 0.409ns (Tch)
+  Physical resource: count_int<28>/CLK
+  Logical resource: count_int_31/CK
+  Location pin: SLICE_X1Y94.CLK
+  Clock network: CLOCK_BUFGP
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: OFFSET = IN 10 ns BEFORE COMP "CLOCK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 560 paths analyzed, 112 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum allowable offset is   5.332ns.
+--------------------------------------------------------------------------------
+
+Paths for end point count_int_0 (SLICE_X1Y101.CIN), 29 paths
+--------------------------------------------------------------------------------
+Slack:                  4.668ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               DIRECTION (PAD)
+  Destination:          count_int_0 (FF)
+  Destination Clock:    CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.700ns (Levels of Logic = 9)
+  Clock Path Delay:     2.393ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: DIRECTION to count_int_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AJ6.I                Tiopi                 0.924   DIRECTION
+                                                       DIRECTION
+                                                       DIRECTION_IBUF
+                                                       DIRECTION_IBUF_inverter
+    SLICE_X1Y94.C2       net (fanout=33)       5.550   DIRECTION_inv
+    SLICE_X1Y94.COUT     Topcyc                0.423   count_int<28>
+                                                       Mcount_count_int_lut<2>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.179   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.700ns (2.150ns logic, 5.550ns route)
+                                                       (27.9% logic, 72.1% route)
+
+  Minimum Clock Path: CLOCK to count_int_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.848   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.200   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.230   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y101.CLK     net (fanout=8)        0.115   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.393ns (1.078ns logic, 1.315ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.695ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               DIRECTION (PAD)
+  Destination:          count_int_0 (FF)
+  Destination Clock:    CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.673ns (Levels of Logic = 9)
+  Clock Path Delay:     2.393ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: DIRECTION to count_int_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AJ6.I                Tiopi                 0.924   DIRECTION
+                                                       DIRECTION
+                                                       DIRECTION_IBUF
+                                                       DIRECTION_IBUF_inverter
+    SLICE_X1Y94.D2       net (fanout=33)       5.554   DIRECTION_inv
+    SLICE_X1Y94.COUT     Topcyd                0.392   count_int<28>
+                                                       Mcount_count_int_lut<3>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.179   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.673ns (2.119ns logic, 5.554ns route)
+                                                       (27.6% logic, 72.4% route)
+
+  Minimum Clock Path: CLOCK to count_int_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.848   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.200   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.230   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y101.CLK     net (fanout=8)        0.115   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.393ns (1.078ns logic, 1.315ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.703ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               DIRECTION (PAD)
+  Destination:          count_int_0 (FF)
+  Destination Clock:    CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.665ns (Levels of Logic = 8)
+  Clock Path Delay:     2.393ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: DIRECTION to count_int_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AJ6.I                Tiopi                 0.924   DIRECTION
+                                                       DIRECTION
+                                                       DIRECTION_IBUF
+                                                       DIRECTION_IBUF_inverter
+    SLICE_X1Y95.C1       net (fanout=33)       5.619   DIRECTION_inv
+    SLICE_X1Y95.COUT     Topcyc                0.423   count_int<24>
+                                                       Mcount_count_int_lut<6>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.179   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.665ns (2.046ns logic, 5.619ns route)
+                                                       (26.7% logic, 73.3% route)
+
+  Minimum Clock Path: CLOCK to count_int_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.848   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.200   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.230   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y101.CLK     net (fanout=8)        0.115   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.393ns (1.078ns logic, 1.315ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point count_int_2 (SLICE_X1Y101.CIN), 29 paths
+--------------------------------------------------------------------------------
+Slack:                  4.727ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               DIRECTION (PAD)
+  Destination:          count_int_2 (FF)
+  Destination Clock:    CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.641ns (Levels of Logic = 9)
+  Clock Path Delay:     2.393ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: DIRECTION to count_int_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AJ6.I                Tiopi                 0.924   DIRECTION
+                                                       DIRECTION
+                                                       DIRECTION_IBUF
+                                                       DIRECTION_IBUF_inverter
+    SLICE_X1Y94.C2       net (fanout=33)       5.550   DIRECTION_inv
+    SLICE_X1Y94.COUT     Topcyc                0.423   count_int<28>
+                                                       Mcount_count_int_lut<2>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.120   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.641ns (2.091ns logic, 5.550ns route)
+                                                       (27.4% logic, 72.6% route)
+
+  Minimum Clock Path: CLOCK to count_int_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.848   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.200   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.230   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y101.CLK     net (fanout=8)        0.115   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.393ns (1.078ns logic, 1.315ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.754ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               DIRECTION (PAD)
+  Destination:          count_int_2 (FF)
+  Destination Clock:    CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.614ns (Levels of Logic = 9)
+  Clock Path Delay:     2.393ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: DIRECTION to count_int_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AJ6.I                Tiopi                 0.924   DIRECTION
+                                                       DIRECTION
+                                                       DIRECTION_IBUF
+                                                       DIRECTION_IBUF_inverter
+    SLICE_X1Y94.D2       net (fanout=33)       5.554   DIRECTION_inv
+    SLICE_X1Y94.COUT     Topcyd                0.392   count_int<28>
+                                                       Mcount_count_int_lut<3>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.120   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.614ns (2.060ns logic, 5.554ns route)
+                                                       (27.1% logic, 72.9% route)
+
+  Minimum Clock Path: CLOCK to count_int_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.848   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.200   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.230   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y101.CLK     net (fanout=8)        0.115   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.393ns (1.078ns logic, 1.315ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.762ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               DIRECTION (PAD)
+  Destination:          count_int_2 (FF)
+  Destination Clock:    CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.606ns (Levels of Logic = 8)
+  Clock Path Delay:     2.393ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: DIRECTION to count_int_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AJ6.I                Tiopi                 0.924   DIRECTION
+                                                       DIRECTION
+                                                       DIRECTION_IBUF
+                                                       DIRECTION_IBUF_inverter
+    SLICE_X1Y95.C1       net (fanout=33)       5.619   DIRECTION_inv
+    SLICE_X1Y95.COUT     Topcyc                0.423   count_int<24>
+                                                       Mcount_count_int_lut<6>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.120   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.606ns (1.987ns logic, 5.619ns route)
+                                                       (26.1% logic, 73.9% route)
+
+  Minimum Clock Path: CLOCK to count_int_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.848   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.200   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.230   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y101.CLK     net (fanout=8)        0.115   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.393ns (1.078ns logic, 1.315ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point count_int_1 (SLICE_X1Y101.CIN), 29 paths
+--------------------------------------------------------------------------------
+Slack:                  4.741ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               DIRECTION (PAD)
+  Destination:          count_int_1 (FF)
+  Destination Clock:    CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.627ns (Levels of Logic = 9)
+  Clock Path Delay:     2.393ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: DIRECTION to count_int_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AJ6.I                Tiopi                 0.924   DIRECTION
+                                                       DIRECTION
+                                                       DIRECTION_IBUF
+                                                       DIRECTION_IBUF_inverter
+    SLICE_X1Y94.C2       net (fanout=33)       5.550   DIRECTION_inv
+    SLICE_X1Y94.COUT     Topcyc                0.423   count_int<28>
+                                                       Mcount_count_int_lut<2>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.106   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.627ns (2.077ns logic, 5.550ns route)
+                                                       (27.2% logic, 72.8% route)
+
+  Minimum Clock Path: CLOCK to count_int_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.848   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.200   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.230   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y101.CLK     net (fanout=8)        0.115   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.393ns (1.078ns logic, 1.315ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.768ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               DIRECTION (PAD)
+  Destination:          count_int_1 (FF)
+  Destination Clock:    CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.600ns (Levels of Logic = 9)
+  Clock Path Delay:     2.393ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: DIRECTION to count_int_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AJ6.I                Tiopi                 0.924   DIRECTION
+                                                       DIRECTION
+                                                       DIRECTION_IBUF
+                                                       DIRECTION_IBUF_inverter
+    SLICE_X1Y94.D2       net (fanout=33)       5.554   DIRECTION_inv
+    SLICE_X1Y94.COUT     Topcyd                0.392   count_int<28>
+                                                       Mcount_count_int_lut<3>
+                                                       Mcount_count_int_cy<3>
+    SLICE_X1Y95.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<3>
+    SLICE_X1Y95.COUT     Tbyp                  0.104   count_int<24>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.106   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.600ns (2.046ns logic, 5.554ns route)
+                                                       (26.9% logic, 73.1% route)
+
+  Minimum Clock Path: CLOCK to count_int_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.848   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.200   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.230   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y101.CLK     net (fanout=8)        0.115   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.393ns (1.078ns logic, 1.315ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  4.776ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               DIRECTION (PAD)
+  Destination:          count_int_1 (FF)
+  Destination Clock:    CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.592ns (Levels of Logic = 8)
+  Clock Path Delay:     2.393ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: DIRECTION to count_int_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AJ6.I                Tiopi                 0.924   DIRECTION
+                                                       DIRECTION
+                                                       DIRECTION_IBUF
+                                                       DIRECTION_IBUF_inverter
+    SLICE_X1Y95.C1       net (fanout=33)       5.619   DIRECTION_inv
+    SLICE_X1Y95.COUT     Topcyc                0.423   count_int<24>
+                                                       Mcount_count_int_lut<6>
+                                                       Mcount_count_int_cy<7>
+    SLICE_X1Y96.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<7>
+    SLICE_X1Y96.COUT     Tbyp                  0.104   count_int<20>
+                                                       Mcount_count_int_cy<11>
+    SLICE_X1Y97.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<11>
+    SLICE_X1Y97.COUT     Tbyp                  0.104   count_int<16>
+                                                       Mcount_count_int_cy<15>
+    SLICE_X1Y98.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<15>
+    SLICE_X1Y98.COUT     Tbyp                  0.104   count_int<12>
+                                                       Mcount_count_int_cy<19>
+    SLICE_X1Y99.CIN      net (fanout=1)        0.000   Mcount_count_int_cy<19>
+    SLICE_X1Y99.COUT     Tbyp                  0.104   count_int<8>
+                                                       Mcount_count_int_cy<23>
+    SLICE_X1Y100.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<23>
+    SLICE_X1Y100.COUT    Tbyp                  0.104   count_int<4>
+                                                       Mcount_count_int_cy<27>
+    SLICE_X1Y101.CIN     net (fanout=1)        0.000   Mcount_count_int_cy<27>
+    SLICE_X1Y101.CLK     Tcinck                0.106   count_int<0>
+                                                       Mcount_count_int_xor<31>
+                                                       count_int_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.592ns (1.973ns logic, 5.619ns route)
+                                                       (26.0% logic, 74.0% route)
+
+  Minimum Clock Path: CLOCK to count_int_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.848   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.200   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.230   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y101.CLK     net (fanout=8)        0.115   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.393ns (1.078ns logic, 1.315ns route)
+                                                       (45.0% logic, 55.0% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: OFFSET = OUT 10 ns AFTER COMP "CLOCK";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 32 paths analyzed, 32 endpoints analyzed, 4 failing endpoints
+ 4 timing errors detected.
+ Minimum allowable offset is  12.582ns.
+--------------------------------------------------------------------------------
+
+Paths for end point COUNT_OUT<27> (AD26.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack:                  -2.582ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               count_int_4 (FF)
+  Destination:          COUNT_OUT<27> (PAD)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      8.204ns (Levels of Logic = 1)
+  Clock Path Delay:     4.353ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Clock Path: CLOCK to count_int_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.881   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.304   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.250   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y100.CLK     net (fanout=8)        1.918   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      4.353ns (1.131ns logic, 3.222ns route)
+                                                       (26.0% logic, 74.0% route)
+
+  Maximum Data Path: count_int_4 to COUNT_OUT<27>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y100.DQ      Tcko                  0.450   count_int<4>
+                                                       count_int_4
+    AD26.O               net (fanout=3)        5.115   count_int<4>
+    AD26.PAD             Tioop                 2.639   COUNT_OUT<27>
+                                                       COUNT_OUT_27_OBUF
+                                                       COUNT_OUT<27>
+    -------------------------------------------------  ---------------------------
+    Total                                      8.204ns (3.089ns logic, 5.115ns route)
+                                                       (37.7% logic, 62.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point COUNT_OUT<24> (H18.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack:                  -0.505ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               count_int_7 (FF)
+  Destination:          COUNT_OUT<24> (PAD)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      6.127ns (Levels of Logic = 1)
+  Clock Path Delay:     4.353ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Clock Path: CLOCK to count_int_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.881   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.304   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.250   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y100.CLK     net (fanout=8)        1.918   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      4.353ns (1.131ns logic, 3.222ns route)
+                                                       (26.0% logic, 74.0% route)
+
+  Maximum Data Path: count_int_7 to COUNT_OUT<24>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y100.AQ      Tcko                  0.450   count_int<4>
+                                                       count_int_7
+    H18.O                net (fanout=3)        2.995   count_int<7>
+    H18.PAD              Tioop                 2.682   COUNT_OUT<24>
+                                                       COUNT_OUT_24_OBUF
+                                                       COUNT_OUT<24>
+    -------------------------------------------------  ---------------------------
+    Total                                      6.127ns (3.132ns logic, 2.995ns route)
+                                                       (51.1% logic, 48.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point COUNT_OUT<26> (G15.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack:                  -0.429ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               count_int_5 (FF)
+  Destination:          COUNT_OUT<26> (PAD)
+  Source Clock:         CLOCK_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      6.051ns (Levels of Logic = 1)
+  Clock Path Delay:     4.353ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.025ns
+
+  Clock Uncertainty:          0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.050ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Clock Path: CLOCK to count_int_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    AG18.I               Tiopi                 0.881   CLOCK
+                                                       CLOCK
+                                                       CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.I0     net (fanout=1)        1.304   CLOCK_BUFGP/IBUFG
+    BUFGCTRL_X0Y0.O      Tbgcko_O              0.250   CLOCK_BUFGP/BUFG
+                                                       CLOCK_BUFGP/BUFG
+    SLICE_X1Y100.CLK     net (fanout=8)        1.918   CLOCK_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      4.353ns (1.131ns logic, 3.222ns route)
+                                                       (26.0% logic, 74.0% route)
+
+  Maximum Data Path: count_int_5 to COUNT_OUT<26>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X1Y100.CQ      Tcko                  0.450   count_int<4>
+                                                       count_int_5
+    G15.O                net (fanout=3)        2.912   count_int<5>
+    G15.PAD              Tioop                 2.689   COUNT_OUT<26>
+                                                       COUNT_OUT_26_OBUF
+                                                       COUNT_OUT<26>
+    -------------------------------------------------  ---------------------------
+    Total                                      6.051ns (3.139ns logic, 2.912ns route)
+                                                       (51.9% logic, 48.1% route)
+
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLOCK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+DIRECTION   |    5.332(R)|   -1.184(R)|CLOCK_BUFGP       |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CLOCK to Pad
+-------------+------------+------------------+--------+
+             | clk (edge) |                  | Clock  |
+Destination  |   to PAD   |Internal Clock(s) | Phase  |
+-------------+------------+------------------+--------+
+COUNT_OUT<0> |    8.698(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<1> |    8.830(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<2> |    8.824(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<3> |    8.837(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<4> |    8.679(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<5> |    9.013(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<6> |    9.025(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<7> |    8.834(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<8> |    9.044(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<9> |    9.036(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<10>|    8.870(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<11>|    8.858(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<12>|    8.953(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<13>|    8.925(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<14>|    8.865(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<15>|    8.865(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<16>|    8.957(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<17>|    8.849(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<18>|    8.900(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<19>|    8.939(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<20>|    8.963(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<21>|    8.972(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<22>|    8.812(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<23>|    8.917(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<24>|   10.505(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<25>|   10.328(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<26>|   10.429(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<27>|   12.582(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<28>|    8.997(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<29>|    9.071(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<30>|    8.907(R)|CLOCK_BUFGP       |   0.000|
+COUNT_OUT<31>|    9.064(R)|CLOCK_BUFGP       |   0.000|
+-------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK          |    2.372|         |         |         |
+---------------+---------+---------+---------+---------+
+
+OFFSET = OUT 10 ns AFTER COMP "CLOCK";
+Bus Skew: 3.903 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+COUNT_OUT<0>                                   |        8.698|         0.019|
+COUNT_OUT<1>                                   |        8.830|         0.151|
+COUNT_OUT<2>                                   |        8.824|         0.145|
+COUNT_OUT<3>                                   |        8.837|         0.158|
+COUNT_OUT<4>                                   |        8.679|         0.000|
+COUNT_OUT<5>                                   |        9.013|         0.334|
+COUNT_OUT<6>                                   |        9.025|         0.346|
+COUNT_OUT<7>                                   |        8.834|         0.155|
+COUNT_OUT<8>                                   |        9.044|         0.365|
+COUNT_OUT<9>                                   |        9.036|         0.357|
+COUNT_OUT<10>                                  |        8.870|         0.191|
+COUNT_OUT<11>                                  |        8.858|         0.179|
+COUNT_OUT<12>                                  |        8.953|         0.274|
+COUNT_OUT<13>                                  |        8.925|         0.246|
+COUNT_OUT<14>                                  |        8.865|         0.186|
+COUNT_OUT<15>                                  |        8.865|         0.186|
+COUNT_OUT<16>                                  |        8.957|         0.278|
+COUNT_OUT<17>                                  |        8.849|         0.170|
+COUNT_OUT<18>                                  |        8.900|         0.221|
+COUNT_OUT<19>                                  |        8.939|         0.260|
+COUNT_OUT<20>                                  |        8.963|         0.284|
+COUNT_OUT<21>                                  |        8.972|         0.293|
+COUNT_OUT<22>                                  |        8.812|         0.133|
+COUNT_OUT<23>                                  |        8.917|         0.238|
+COUNT_OUT<24>                                  |       10.505|         1.826|
+COUNT_OUT<25>                                  |       10.328|         1.649|
+COUNT_OUT<26>                                  |       10.429|         1.750|
+COUNT_OUT<27>                                  |       12.582|         3.903|
+COUNT_OUT<28>                                  |        8.997|         0.318|
+COUNT_OUT<29>                                  |        9.071|         0.392|
+COUNT_OUT<30>                                  |        8.907|         0.228|
+COUNT_OUT<31>                                  |        9.064|         0.385|
+-----------------------------------------------+-------------+--------------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 4  Score: 3844  (Setup/Max: 3844, Hold: 0)
+
+Constraints cover 1616 paths, 0 nets, and 143 connections
+
+Design statistics:
+   Minimum period:   2.372ns{1}   (Maximum frequency: 421.585MHz)
+   Minimum input required time before clock:   5.332ns
+   Minimum output required time after clock:  12.582ns
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Jun  6 23:41:03 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 606 MB
+
+
+

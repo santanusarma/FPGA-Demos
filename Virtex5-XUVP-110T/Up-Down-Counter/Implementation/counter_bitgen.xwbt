@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation/counter.ncd
+OUTFILE=/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation/counter.bit
+FAMILY=Virtex5
+PART=xc5vlx110t-1ff1136
+WORKINGDIR=/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation
+LICENSE=ISE
+USER_INFO=__0_0_0

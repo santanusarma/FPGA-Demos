@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation/testbench_selfcheck_beh_isim_beh.exe" -prj "/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/Implementation/testbench_selfcheck_beh_beh.prj" "work.testbench_selfcheck_beh" 

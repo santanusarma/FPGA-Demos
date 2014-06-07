@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Fri Jun 06 23:40:39 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DIRECTION" LOCATE = SITE "AJ6" LEVEL 1;
+COMP "COUNT_OUT<24>" LOCATE = SITE "H18" LEVEL 1;
+COMP "COUNT_OUT<25>" LOCATE = SITE "L18" LEVEL 1;
+COMP "COUNT_OUT<26>" LOCATE = SITE "G15" LEVEL 1;
+COMP "COUNT_OUT<27>" LOCATE = SITE "AD26" LEVEL 1;
+COMP "CLOCK" LOCATE = SITE "AG18" LEVEL 1;
+TIMEGRP CLOCK = BEL "count_int_31" BEL "count_int_30" BEL "count_int_29" BEL
+        "count_int_28" BEL "count_int_27" BEL "count_int_26" BEL
+        "count_int_25" BEL "count_int_24" BEL "count_int_23" BEL
+        "count_int_22" BEL "count_int_21" BEL "count_int_20" BEL
+        "count_int_19" BEL "count_int_18" BEL "count_int_17" BEL
+        "count_int_16" BEL "count_int_15" BEL "count_int_14" BEL
+        "count_int_13" BEL "count_int_12" BEL "count_int_11" BEL
+        "count_int_10" BEL "count_int_9" BEL "count_int_8" BEL "count_int_7"
+        BEL "count_int_6" BEL "count_int_5" BEL "count_int_4" BEL
+        "count_int_3" BEL "count_int_2" BEL "count_int_1" BEL "count_int_0"
+        BEL "CLOCK_BUFGP/BUFG";
+TS_CLOCK = PERIOD TIMEGRP "CLOCK" 40 ns HIGH 50%;
+OFFSET = IN 10 ns BEFORE COMP "CLOCK";
+OFFSET = OUT 10 ns AFTER COMP "CLOCK";
+SCHEMATIC END;
+

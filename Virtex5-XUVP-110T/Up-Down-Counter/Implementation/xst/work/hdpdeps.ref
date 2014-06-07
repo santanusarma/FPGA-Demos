@@ -1,0 +1,9 @@
+V3 3
+FL /home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/SRC/counter.vhd 2014/06/06.23:16:18 P.28xd
+EN work/counter 1402123218 \
+      FL /home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/SRC/counter.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/counter/Behavioral 1402123219 \
+      FL /home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/SRC/counter.vhd \
+      EN work/counter 1402123218

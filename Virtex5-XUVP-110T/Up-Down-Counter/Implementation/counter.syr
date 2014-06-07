@@ -1,0 +1,432 @@
+Release 14.2 - xst P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "counter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "counter"
+Output Format                      : NGC
+Target Device                      : xc5vlx110t-1-ff1136
+
+---- Source Options
+Top Module Name                    : counter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Off
+Reduce Control Sets                : Off
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/SRC/counter.vhd" in Library work.
+Architecture behavioral of Entity counter is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <counter> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <counter> in library <work> (Architecture <behavioral>).
+Entity <counter> analyzed. Unit <counter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <counter>.
+    Related source file is "/home/student/Dropbox/Projects/V5-ReferenceDesign/quickstart/SRC/counter.vhd".
+    Found 32-bit updown counter for signal <count_int>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit updown counter                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit updown counter                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block counter, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : counter.ngr
+Top Level Output File Name         : counter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 96
+#      INV                         : 1
+#      LUT2                        : 32
+#      MUXCY                       : 31
+#      XORCY                       : 32
+# FlipFlops/Latches                : 32
+#      FD                          : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 1
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx110tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              32  out of  69120     0%  
+ Number of Slice LUTs:                   33  out of  69120     0%  
+    Number used as Logic:                33  out of  69120     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     33
+   Number with an unused Flip Flop:       1  out of     33     3%  
+   Number with an unused LUT:             0  out of     33     0%  
+   Number of fully used LUT-FF pairs:    32  out of     33    96%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    640     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLOCK                              | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.559ns (Maximum Frequency: 390.778MHz)
+   Minimum input arrival time before clock: 3.124ns
+   Maximum output required time after clock: 3.264ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK'
+  Clock period: 2.559ns (frequency: 390.778MHz)
+  Total number of paths / destination ports: 1024 / 32
+-------------------------------------------------------------------------
+Delay:               2.559ns (Levels of Logic = 33)
+  Source:            count_int_31 (FF)
+  Destination:       count_int_0 (FF)
+  Source Clock:      CLOCK rising
+  Destination Clock: CLOCK rising
+
+  Data Path: count_int_31 to count_int_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.471   0.485  count_int_31 (count_int_31)
+     LUT2:I1->O            1   0.094   0.000  Mcount_count_int_lut<0> (Mcount_count_int_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  Mcount_count_int_cy<0> (Mcount_count_int_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<1> (Mcount_count_int_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<2> (Mcount_count_int_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<3> (Mcount_count_int_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<4> (Mcount_count_int_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<5> (Mcount_count_int_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<6> (Mcount_count_int_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<7> (Mcount_count_int_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<8> (Mcount_count_int_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<9> (Mcount_count_int_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<10> (Mcount_count_int_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<11> (Mcount_count_int_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<12> (Mcount_count_int_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<13> (Mcount_count_int_cy<13>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<14> (Mcount_count_int_cy<14>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<15> (Mcount_count_int_cy<15>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<16> (Mcount_count_int_cy<16>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<17> (Mcount_count_int_cy<17>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<18> (Mcount_count_int_cy<18>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<19> (Mcount_count_int_cy<19>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<20> (Mcount_count_int_cy<20>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<21> (Mcount_count_int_cy<21>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<22> (Mcount_count_int_cy<22>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<23> (Mcount_count_int_cy<23>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<24> (Mcount_count_int_cy<24>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<25> (Mcount_count_int_cy<25>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<26> (Mcount_count_int_cy<26>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<27> (Mcount_count_int_cy<27>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<28> (Mcount_count_int_cy<28>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<29> (Mcount_count_int_cy<29>)
+     MUXCY:CI->O           0   0.026   0.000  Mcount_count_int_cy<30> (Mcount_count_int_cy<30>)
+     XORCY:CI->O           1   0.357   0.000  Mcount_count_int_xor<31> (Result<31>)
+     FD:D                     -0.018          count_int_0
+    ----------------------------------------
+    Total                      2.559ns (2.074ns logic, 0.485ns route)
+                                       (81.0% logic, 19.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK'
+  Total number of paths / destination ports: 560 / 32
+-------------------------------------------------------------------------
+Offset:              3.124ns (Levels of Logic = 34)
+  Source:            DIRECTION (PAD)
+  Destination:       count_int_0 (FF)
+  Destination Clock: CLOCK rising
+
+  Data Path: DIRECTION to count_int_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   0.818   0.703  DIRECTION_IBUF (DIRECTION_IBUF)
+     LUT2:I0->O            1   0.094   0.000  Mcount_count_int_lut<0> (Mcount_count_int_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  Mcount_count_int_cy<0> (Mcount_count_int_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<1> (Mcount_count_int_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<2> (Mcount_count_int_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<3> (Mcount_count_int_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<4> (Mcount_count_int_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<5> (Mcount_count_int_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<6> (Mcount_count_int_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<7> (Mcount_count_int_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<8> (Mcount_count_int_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<9> (Mcount_count_int_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<10> (Mcount_count_int_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<11> (Mcount_count_int_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<12> (Mcount_count_int_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<13> (Mcount_count_int_cy<13>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<14> (Mcount_count_int_cy<14>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<15> (Mcount_count_int_cy<15>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<16> (Mcount_count_int_cy<16>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<17> (Mcount_count_int_cy<17>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<18> (Mcount_count_int_cy<18>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<19> (Mcount_count_int_cy<19>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<20> (Mcount_count_int_cy<20>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<21> (Mcount_count_int_cy<21>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<22> (Mcount_count_int_cy<22>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<23> (Mcount_count_int_cy<23>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<24> (Mcount_count_int_cy<24>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<25> (Mcount_count_int_cy<25>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<26> (Mcount_count_int_cy<26>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<27> (Mcount_count_int_cy<27>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<28> (Mcount_count_int_cy<28>)
+     MUXCY:CI->O           1   0.026   0.000  Mcount_count_int_cy<29> (Mcount_count_int_cy<29>)
+     MUXCY:CI->O           0   0.026   0.000  Mcount_count_int_cy<30> (Mcount_count_int_cy<30>)
+     XORCY:CI->O           1   0.357   0.000  Mcount_count_int_xor<31> (Result<31>)
+     FD:D                     -0.018          count_int_0
+    ----------------------------------------
+    Total                      3.124ns (2.421ns logic, 0.703ns route)
+                                       (77.5% logic, 22.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.264ns (Levels of Logic = 1)
+  Source:            count_int_0 (FF)
+  Destination:       COUNT_OUT<31> (PAD)
+  Source Clock:      CLOCK rising
+
+  Data Path: count_int_0 to COUNT_OUT<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.471   0.341  count_int_0 (count_int_0)
+     OBUF:I->O                 2.452          COUNT_OUT_31_OBUF (COUNT_OUT<31>)
+    ----------------------------------------
+    Total                      3.264ns (2.923ns logic, 0.341ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.98 secs
+ 
+--> 
+
+
+Total memory usage is 548084 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

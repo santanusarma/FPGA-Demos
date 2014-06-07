@@ -1,0 +1,2 @@
+vhdl work "../SRC/counter.vhd"
+vhdl work "../testbench/testbench_selfcheck_beh.vhd"
