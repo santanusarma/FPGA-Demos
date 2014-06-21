@@ -29,6 +29,8 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [12] FLASH-Demo: data store and access to the FLASH card (tbc)
 
+[12a] SPI-Flash-Demo: SPI FPASH programing demo (tbc)
+
 [13] RO-Demo: Implement a Ring-Oscillators and read the signatures through UART (tbc) 
 
 [14] PLL-Demo: Implement PLL and generate different clock phase shifts(tbc)
@@ -40,6 +42,10 @@ FPGA Demos and Reference Designs for Xilinx Boards
 [17] Embedded-Processor-Demo: EDK based Microblaze demo with hello world (tbc)
 
 [17a] Processor-Inturrpt-Demo: Microblaze processor inturrpt demo (tbc)
+
+[17b] I2C-Bus-Demo: I2C bus interface with AMBA AXI and microblaze (tbc)
+
+[17c] APU Demo: Auxiliary Co-processor Unit inetegration with microblaze (tbc)
 
 [18] APB-IPCore-Demo: Interface an IPcore with APB bus (tbc)
 
