@@ -13,6 +13,8 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [05] RS232-Demo : Serial communication with the host (tbc)
 
+[05a] RS232-Matlab-Demo: Serial communication from Matlab (tbc)
+
 [06] UART-Demo : Bi-directional serial commomumication with the Host using a Terminal (tbc)
 
 [07] UART-LCD-Demo : Bi-directional serial commomumication along with text display in the LCD (tbc)
@@ -35,7 +37,9 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [16] USB-Demo: communicate to a USB device connected to the board (tbc)
 
-[17] Embedded-Processor-Demo: EDK based Microblaze/PPC4xx demo with hello world (tbc)
+[17] Embedded-Processor-Demo: EDK based Microblaze demo with hello world (tbc)
+
+[17a] Processor-Inturpt-Demo: Microblaze processor inturpt demo (tbc)
 
 [18] APB-IPCore-Demo: Interface an IPcore with APB bus (tbc)
 
