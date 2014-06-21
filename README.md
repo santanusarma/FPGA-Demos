@@ -39,7 +39,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [17] Embedded-Processor-Demo: EDK based Microblaze demo with hello world (tbc)
 
-[17a] Processor-Inturpt-Demo: Microblaze processor inturpt demo (tbc)
+[17a] Processor-Inturrpt-Demo: Microblaze processor inturrpt demo (tbc)
 
 [18] APB-IPCore-Demo: Interface an IPcore with APB bus (tbc)
 
