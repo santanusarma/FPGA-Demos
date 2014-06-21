@@ -57,7 +57,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [25] Web-Server-Demo: TCP IP based web server (tbc)
 
-[26] PartialReconfig-Demo: partial reconfihuration with plan ahead (tbc)
+[26] PartialReconfig-Demo: partial reconfiguration with plan ahead (tbc)
 
 [27] AudioIF-Demo: Audio interface and codec demo (tbc)
 
