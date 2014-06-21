@@ -49,7 +49,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [23] Temperature-Demo: measure on-chip temperature and log data on host (tbc)
 
-[24] HLS-Demo : High level sysnthesis accelarator with Vivaldo (tbc)
+[24] HLS-Demo : High level sysnthesis accelarator with Vivado (tbc)
 
 [25] Web-Server-Demo: TCP IP based web server (tbc)
 
