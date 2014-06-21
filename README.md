@@ -3,10 +3,10 @@ FPGA-Demos
 
 FPGA Demos and Reference Designs for Xilinx Boards
 
-[01] Counter-Demo: A Simple Counter Demo that is interfaced to the LEDs (which periodically blinks) 
+[01] Counter-Demo: A Simple Counter Demo that is interfaced to the LEDs (which periodically blinks)
 [02] Up-Down-Counter : Up down counter that is interfaced to the LEDs
 [03] LCD-Demo : Displays the message in the LCD
-[04] LCD-LED-Demo : Display a message in LCD and indicate the character in the LED 
+[04] LCD-LED-Demo : Display a message in LCD and indicate the character in the LED
 [05] RS232-Demo : Serial communication with teh Host (tbc)
 [06] UART-Demo : Bi-directional serial commomumication with the Host using a Terminal (tbc)
 [07] UART-LCD-Demo : Bi-directional serial commomumication along with text display in the LCD (tbc)
@@ -31,3 +31,4 @@ FPGA Demos and Reference Designs for Xilinx Boards
 [26] PartialReconfig-Demo: partial reconfihuration with plan ahead (tbc)
 [27] Board Test: Test the complete board functions (tbc)
 [28] MultiProcessor-Demo: multi-core processor demo (tbc)
+
