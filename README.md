@@ -51,7 +51,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [22] SysMonitor-Demo: Monitor board power, voltage ad temperature, and external signal (tbc)
 
-[23] Temperature-Demo: measure on-chip temperature and log data on host (tbc)
+[23] Mixed-Source-Demo: Mixed VHDL and Verilog based project demo (tbc)
 
 [24] HLS-Demo : High level sysnthesis accelarator with Vivado (tbc)
 
