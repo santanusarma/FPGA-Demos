@@ -30,4 +30,4 @@ FPGA Demos and Reference Designs for Xilinx Boards
 [25] Web-Server-Demo: TCP IP based web server (tbc)
 [26] PartialReconfig-Demo: partial reconfihuration with plan ahead (tbc)
 [27] Board Test: Test the complete board functions (tbc)
-
+[28] MultiProcessor-Demo: multi-core processor demo (tbc)
