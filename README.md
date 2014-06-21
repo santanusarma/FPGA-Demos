@@ -53,7 +53,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [23] Mixed-Source-Demo: Mixed VHDL and Verilog based project demo (tbc)
 
-[24] HLS-Demo : High level sysnthesis accelarator with Vivado (tbc)
+[24] HLS-Demo : High level synthesis based accelarator design with Vivado (tbc)
 
 [25] Web-Server-Demo: TCP IP based web server (tbc)
 
