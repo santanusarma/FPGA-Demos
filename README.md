@@ -11,7 +11,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [04] LCD-LED-Demo : Display a message in LCD and indicate the character in the LED
 
-[05] RS232-Demo : Serial communication with teh Host (tbc)
+[05] RS232-Demo : Serial communication with the host (tbc)
 
 [06] UART-Demo : Bi-directional serial commomumication with the Host using a Terminal (tbc)
 
@@ -45,7 +45,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [21] DVFS-Demo : Dynamic/Adaptive Voltage / Frequency scaling (tbc)
 
-[22] SysMonitor-Demo: Monitor board power, voltage ad temeprature, and external signal (tbc)
+[22] SysMonitor-Demo: Monitor board power, voltage ad temperature, and external signal (tbc)
 
 [23] Temperature-Demo: measure on-chip temperature and log data on host (tbc)
 
@@ -55,7 +55,11 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [26] PartialReconfig-Demo: partial reconfihuration with plan ahead (tbc)
 
-[27] Board Test: Test the complete board functions (tbc)
+[27] AudioIF-Demo: Audio interface and codec demo (tbc)
 
-[28] MultiProcessor-Demo: multi-core processor demo (tbc)
+[28] VideioIF-Demo: Videoo interface and processing demo (tbc)
+
+[29] Board Test: Test the complete board functions (tbc)
+
+[30] MultiProcessor-Demo: multi-core processor demo (tbc)
 
