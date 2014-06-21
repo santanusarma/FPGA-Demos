@@ -45,7 +45,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [21] DVFS-Demo : Dynamic/Adaptive Voltage / Frequency scaling (tbc)
 
-[22] SynMonitor-Demo: Monitor board power, voltage ad temeprature, and external signal (tbc)
+[22] SysMonitor-Demo: Monitor board power, voltage ad temeprature, and external signal (tbc)
 
 [23] Temperature-Demo: measure on-chip temperature and log data on host (tbc)
 
