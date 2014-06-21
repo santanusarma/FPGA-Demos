@@ -57,7 +57,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [27] AudioIF-Demo: Audio interface and codec demo (tbc)
 
-[28] VideioIF-Demo: Videoo interface and processing demo (tbc)
+[28] VideoIF-Demo: Videoo interface and processing demo (tbc)
 
 [29] Board Test: Test the complete board functions (tbc)
 
