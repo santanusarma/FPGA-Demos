@@ -32,7 +32,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [12] FLASH-Demo: data store and access to the FLASH card (tbc)
 
-[12a] SPI-Flash-Demo: SPI FPASH programing demo (tbc)
+[12a] SPI-Flash-Demo: SPI FLASH programing demo (tbc)
 
 [12b] SPI-SFI-Demo: System Packet Interface (SPI) and SerDes Framer Interface (SFI) (tbc)
 
