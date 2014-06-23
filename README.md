@@ -80,7 +80,7 @@ FPGA Demos and Reference Designs for Xilinx Boards
 
 [24] HLS-Demo : High level synthesis based accelarator design with Vivado (tbc)
 
-[24a] DSP-Sytem-Gen-Demo: System Generator DSP demo (tbc)
+[24a] DSP-System-Gen-Demo: System Generator DSP demo (tbc)
 
 [25] Web-Server-Demo: TCP IP based web server (tbc)
 
