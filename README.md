@@ -4,13 +4,13 @@ FPGA-Demos
 FPGA Demos and Reference Designs for Xilinx Boards
 ==================================================
 
-[01] Counter-Demo: A Simple Counter Demo that is interfaced to the LEDs (which periodically blinks)
+[01] Counter-Demo: A Simple Counter Demo that is interfaced to the LEDs (which periodically blinks)  [ done ]
 
-[02] Up-Down-Counter : Up down counter that is interfaced to the LEDs
+[02] Up-Down-Counter : Up down counter that is interfaced to the LEDs  [done]
 
-[03] LCD-Demo : Displays the message in the LCD
+[03] LCD-Demo : Displays the message in the LCD [done]
 
-[04] LCD-LED-Demo : Display a message in LCD and indicate the character in the LED
+[04] LCD-LED-Demo : Display a message in LCD and indicate the character in the LED [done]
 
 [05] RS232-Demo : Serial communication with the host (tbc)
 
